@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BUDGET MONITORING SYSTEM - CONTACT US</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <style>
+        .contactDetails {
+            display: flex;
+            /*align-items: center;*/
+            justify-content: space-between;
+            max-width: 1300px;
+            margin: 25px auto;
+        }
+
+        .PersonalDetails h5 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .PDetails {
+            display: flex;
+            align-items: center;
+        }
+
+        .PDetails h6 {
+            width: 170px;
+            font-size: 18px;
+            color: #004c7d;
+
+        }
+
+        .photo h5{
+            font-size: 25px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .photo img {
+            height: 220px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header_section">
+        <div class="header_section">
+            <div class="logo">
+                <p>BUDGET MONITORING SYSTEM</p>
+            </div>
+            <div class="menu_section">
+                <div class="menu-icon" onclick="showMenu()">
+                    <i class="fa fa-bars open-icon"></i>
+                </div>
+                <ul class="menu">
+                    <li class=""><a href="index.html">Home</a></li>
+                    <li id="expenditure" class=""><a href="expenditure.html">Expenditure</a></li>
+                    <li class=""><a href="about.html">About Us</a></li>
+                    <!-- <li class=""><a href="#">Savings</a></li> -->
+                    <li class="active"><a href="contact.html">Contact us</a></li>
+                    <li id="signin" class=""><a href="signin.html">Sign in</a></li>
+                    <li id="signup" class=""><a href="signup.html">Sign up</a></li>
+                    <li id="logOut" class=""><a onclick="localStorage.removeItem('email')" href="signin.html">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="banner_section">
+        <div class="about_banner">
+            <img src="./assets/home_banner.jpg">
+            <div class="overlay"></div>
+            <div class="banner_text">
+                <h4>CONTACT US</h4>
+            </div>
+        </div>
+    </div>
+    <div class="contact_content">
+        <div class="contact_section">
+            <div class="contact_form">
+                <h4>Get In Touch</h4>
+                <form>
+                    
+                    <input type="text" id="fname" name="fname" placeholder="Name"><br>
+                    <input type="text" id="lname" name="lname" placeholder="Email"><br>
+                    <textarea placeholder="Message"></textarea>
+                    
+                    <div class="submit_btn">
+                        <button type="submit" >Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="contact_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15204.528795837017!2d83.0023943!3d17.691214!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c9adb87f8733228!2sDADI%20VEERUNAIDU%20COLLEGE!5e0!3m2!1sen!2sin!4v1647087064099!5m2!1sen!2sin"  height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div> -->
+
+    <div class="contactDetails">
+        <div class="PersonalDetails">
+            <h5>Personal Details</h5>
+
+            <div class="PersonDetails"> 
+                <div class="PDetails">
+                    <h6>Name:</h6>
+                    <p>G.Sai</p>
+                </div>
+
+                <div class="PDetails">
+                    <h6>Father Name:</h6>
+                    <p>G.Esawar Rao</p>
+                </div>
+
+                <div class="PDetails">
+                    <h6>Mother Name:</h6>
+                    <p>G.Laxmi</p>
+                </div>
+
+                <div class="PDetails">
+                    <h6>Gender:</h6>
+                    <p>Male</p>
+                </div>
+
+                <div class="PDetails">
+                    <h6>Email:</h6>
+                    <p>saigollavilli2@gmail.com</p>
+                </div>
+
+                <div class="PDetails">
+                    <h6>Date Of Birth:</h6>
+                    <p>09/02/2000</p>
+                </div>
+
+                <div class="PDetails">
+                    <h6>Contact Details:</h6>
+                    <p>9390986364</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="photo">
+            <h5>Photo :</h5>
+
+            <img src="./assets/img.jpeg">
+        </div>
+
+        <div class="Professional Details">
+            
+
+            <div class="PersonalDetails"> 
+                <h5>Professional Details</h5>
+                <div class="PDetails">
+                    <h6>College Name:</h6>
+                    <p>Dadi Veerunaidu College</p>
+                </div>
+
+                <div class="PDetails">
+                    <h6>Hallticket No:</h6>
+                    <p>7191203050102</p>
+                </div>
+
+                <div class="PDetails">
+                    <h6>Studying:</h6>
+                    <p>Final Year BSC</p>
+                </div>
+
+                <div class="PDetails">
+                    <h6>Contact No:</h6>
+                    <p>9154143901</p>
+                </div>
+
+                <div class="PDetails">
+                    <h6>Course:</h6>
+                    <p>M.P.Cs</p>
+                </div>
+
+                <div class="PDetails">
+                    <h6>Address:</h6>
+                    <p>opp.george club ,AKP, Visakhapatnam.</p>
+                </div>
+
+                <div class="PDetails">
+                    <h6>Phone No:</h6>
+                    <p>+0891 222921</p>
+                </div>
+
+                <div class="PDetails">
+                    <h6>WEB Site:</h6>
+                    <p><a target="_blank" href="https://dadicollege.edu.in/">https://dadicollege.edu.in/</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function showMenu() {
+        document.querySelector(".menu").classList.toggle("open-menu");
+        document.querySelector(".open-icon").classList.toggle("close-icon");
+    }
+    var email = localStorage.getItem("email");
+    if(email){
+        document.getElementById("signin").style.display = "none";
+        document.getElementById("signup").style.display = "none";
+        document.getElementById("logOut").style.display = "block";
+        document.getElementById("expenditure").style.display = "block";
+    }else{
+        document.getElementById("signin").style.display = "block";
+        document.getElementById("logOut").style.display = "none";
+        document.getElementById("expenditure").style.display = "none";
+        localStorage.removeItem("email");
+    }
+    </script>
+</body>
+
+</html>

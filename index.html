@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BUDGET MONITORING SYSTEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="header_section">
+        <div class="header_section">
+            <div class="logo">
+                <p>BUDGET MONITORING SYSTEM</p>
+            </div>
+            <div class="menu_section">
+                <div class="menu-icon" onclick="showMenu()">
+                    <i class="fa fa-bars open-icon"></i>
+                </div>
+                <ul class="menu">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li id="expenditure" class=""><a href="expenditure.html">Expenditure</a></li>
+                    <li class=""><a href="about.html">About Us</a></li>
+                    <!-- <li class=""><a href="#">Savings</a></li> -->
+                    <li  class=""><a href="contact.html">Contact us</a></li>
+                    <li id="signin" class=""><a href="signin.html">Sign in</a></li>
+                    <li id="signup" class=""><a href="signup.html">Sign up</a></li>
+                    <li id="logOut" class=""><a onclick="localStorage.removeItem('email')" href="signin.html">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="banner_section">
+        <div>
+            <img src="./assets/home_banner.jpg">
+        </div>
+    </div>
+    <script>
+    function showMenu() {
+        document.querySelector(".menu").classList.toggle("open-menu");
+        document.querySelector(".open-icon").classList.toggle("close-icon");
+    }
+    var email = localStorage.getItem("email");
+    if(email){
+        document.getElementById("signin").style.display = "none";
+        document.getElementById("signup").style.display = "none";
+        document.getElementById("logOut").style.display = "block";
+        document.getElementById("expenditure").style.display = "block";
+    }else{
+        document.getElementById("signin").style.display = "block";
+        document.getElementById("logOut").style.display = "none";
+        document.getElementById("expenditure").style.display = "none";
+        localStorage.removeItem("email");
+    }
+    </script>
+</body>
+
+</html>
